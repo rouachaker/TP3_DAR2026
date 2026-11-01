@@ -39,13 +39,13 @@ Les consoles permettent de vérifier le démarrage du serveur, la connexion du c
 
 Cette capture montre le serveur en cours d'exécution et les informations relatives aux connexions reçues.
 
-![Console du serveur — Partie 1](capture/0.png)
+![Console du serveur — Partie 1](0.png)
 
 ### Capture 2 — Console du client
 
 Cette capture présente le client après son lancement et sa connexion au serveur.
 
-![Console du client — Partie 1](capture/1.png)
+![Console du client — Partie 1](1.png)
 
 ## 4. Test avec Telnet
 
@@ -55,11 +55,11 @@ Ce test permet notamment d'observer l'ouverture d'une connexion depuis un termin
 
 ### Capture 3 — Connexion avec Telnet
 
-![Test avec Telnet](capture/2.png)
+![Test avec Telnet](2.png)
 
-![Test avec Telnet](capture/3.png)
+![Test avec Telnet](3.png)
 
-![Test avec Telnet](capture/4.png)
+![Test avec Telnet](4.png)
 
 
 ---
