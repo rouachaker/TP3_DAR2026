@@ -67,7 +67,6 @@ Ce test permet notamment d'observer l'ouverture d'une connexion depuis un termin
 # Partie 2 — Calculatrice client-serveur multithreadée
 
 ## 1. Objectif
-
 La deuxième partie consiste à améliorer l'application client-serveur développée précédemment en ajoutant une calculatrice capable de traiter les opérations envoyées par les clients.
 
 Le serveur reçoit les opérations sous forme d'objets Java, effectue les calculs et renvoie les résultats aux clients.
