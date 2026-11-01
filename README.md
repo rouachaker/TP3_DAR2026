@@ -1,0 +1,65 @@
+# TP3-DAR2026 — Serveur Multi-threads - sockets en mode connecté TCP
+
+
+Ce TP a pour objectif de mettre en pratique la programmation réseau en Java à l'aide des sockets TCP et des threads.
+
+Il est composé de deux parties :
+
+- **Partie 1 :** permettre au serveur d'accepter plusieurs clients et de gérer leurs connexions.
+- **Partie 2 :** améliorer une calculatrice client-serveur afin de traiter des opérations envoyées par plusieurs clients simultanément.
+
+
+# Partie 1 — Acceptation de plusieurs clients
+
+## 1. Objectif
+
+L'objectif de cette première partie est de modifier un serveur TCP afin qu'il puisse accepter plusieurs connexions clientes au lieu de traiter un seul client.
+
+Le serveur doit pouvoir identifier les clients connectés et afficher leurs adresses réseau. Chaque client est pris en charge par un thread afin que plusieurs clients puissent être gérés sans bloquer le serveur.
+
+## 2. Fonctionnement
+
+Le serveur utilise une boucle pour attendre les connexions entrantes. Lorsqu'un client se connecte :
+
+1. Le serveur accepte la connexion avec `accept()`.
+2. Il récupère les informations du client connecté.
+3. Il attribue un numéro au client.
+4. Il crée un thread pour gérer ce client.
+5. Il continue à attendre d'autres connexions.
+
+Cette organisation permet au serveur de continuer à accepter de nouveaux clients pendant que les connexions précédentes sont prises en charge.
+
+## 3. Test du serveur et du client
+
+Le serveur est lancé en premier. Le client se connecte ensuite au serveur à l'aide d'une socket TCP.
+
+Les consoles permettent de vérifier le démarrage du serveur, la connexion du client et les informations affichées lors de la communication.
+
+### Capture 1 — Console du serveur
+
+Cette capture montre le serveur en cours d'exécution et les informations relatives aux connexions reçues.
+
+![Console du serveur — Partie 1](capture/0.png)
+
+### Capture 2 — Console du client
+
+Cette capture présente le client après son lancement et sa connexion au serveur.
+
+![Console du client — Partie 1](capture/1.png)
+
+## 4. Test avec Telnet
+
+Telnet est utilisé pour vérifier qu'il est possible d'établir une connexion TCP avec le serveur.
+
+Ce test permet notamment d'observer l'ouverture d'une connexion depuis un terminal, sans utiliser le programme Java Client.
+
+### Capture 3 — Connexion avec Telnet
+
+![Test avec Telnet](capture/2.png)
+
+![Test avec Telnet](capture/3.png)
+
+![Test avec Telnet](capture/4.png)
+
+
+---
