@@ -105,7 +105,7 @@ Le serveur est lancé avant les clients. Il attend leurs connexions, reçoit les
 
 Cette capture montre le serveur de calculatrice en fonctionnement et les informations affichées lors du traitement des opérations.
 
-![Serveur de calculatrice — Partie 2](capture/CONSOLE_server3-2.png)
+![Serveur de calculatrice — Partie 2](serv.png)
 
 ## 5. Test de plusieurs clients simultanément
 
@@ -114,13 +114,10 @@ Plusieurs instances du client sont lancées pendant que le serveur reste actif. 
 Ce test permet de vérifier que le serveur accepte plusieurs connexions et que les clients peuvent effectuer des calculs sans devoir attendre la fermeture des autres connexions.
 
 ### Capture 5 — Plusieurs clients simultanés
-Premier client
+Deuxiéme client
 
-![Plusieurs clients simultanés — Partie 2](capture/CL.png)
+![Plusieurs clients simultanés — Partie 2](cli.png)
 
-deuxieme client
-
-![Plusieurs clients simultanés — Partie 2](capture/CONSOLE_client3-2.png)
 
 ---
 
